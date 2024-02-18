@@ -120,6 +120,10 @@ section {
     flex-direction: column;
   }
 
+  .toparticle .content.column, .articles article {
+    text-align: left;
+  }
+
 .column {
     display: flex;
     flex-direction: column;
@@ -132,7 +136,7 @@ section {
   }
 
   h5 {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1.5px;
     padding-left: 0.5em;
@@ -141,15 +145,28 @@ section {
   .toparticle {
     padding-bottom: 3em;
     padding-left: 10%;
-    font: 0.8rem;
+    font: 1rem;
     display: flex;
     justify-content: space-around;
     max-width: fit-content;
     border-bottom: #e6e7e6 solid 1.5px;
   }
 
+  .toparticle h2, .articles article h2 {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+}
+
+.toparticle .content.column, .articles article {
+  margin-left: 40px; 
+  margin-bottom: 40px;
+}
+
+
   .toparticle img {
     width: 30px;
+    border-radius: 50px;
   }
   
   .container {
@@ -167,6 +184,11 @@ section {
     top: 30px;
     display: inline-block;
   }
+
+  article {
+    width: 450px;
+  }
+
 
   article .column div {
     display: flex;
@@ -186,7 +208,7 @@ section {
     display: flex;
     justify-content: space-between;
     margin-block: 1em;
-    width: 800px;
+    width: 1000px;
   }
   
   .articles article > div {
@@ -196,6 +218,13 @@ section {
   .articles article img {
     max-width: cover;
   }
+
+  .articles article .round {
+    max-width: cover;
+    border-radius: 50%;
+    padding-right: 10px;
+  }
+  
   
   .articles h3 {
     font-size: 2rem;
@@ -233,6 +262,8 @@ section {
     padding: 0;
     padding-bottom: 1.5em;
     color: black;
+    text-align: left;
+
   }
   
   .categories {
@@ -256,11 +287,15 @@ section {
   .menu {
     padding-top: 1.5em;
     font-size: 0.9rem;
+    vertical-align: baseline;
+    text-align: left;
   }
   
   .menu a {
     margin-inline: 0.3em;
     line-height: 3em;
+    vertical-align: baseline;
+    text-align: left;
   }
 
 
@@ -269,25 +304,9 @@ section {
 
 
 
-  .toparticle .content.column,
-.articles article {
-    text-align: left;
-    
-}
 
-.toparticle h2,
-.articles article h2 {
-    display: flex;
-    align-items: center;
-    margin-right: 10px; 
-    
-    
-}
 
-.toparticle .content.column,
-.articles article {
-    margin-left: 40px; 
-    margin-bottom: 40px;
-}
+
+
 
 
