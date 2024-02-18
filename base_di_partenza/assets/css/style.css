@@ -13,8 +13,9 @@ header {
     box-sizing: border-box;
     position: -webkit-sticky;
     position: sticky;
-    top: -0;
-    transition: background-color 0.5s ease;
+    top: 0;
+    transition: background-color 1s ease;
+    z-index: 1000;
 }
 
 .yellow {
@@ -162,7 +163,9 @@ section {
     color: #e6e7e6;
     padding-right: 0.5em;
     position: relative;
-    top: -10px;
+    right: 20px;
+    top: 30px;
+    display: inline-block;
   }
 
   article .column div {
@@ -259,4 +262,32 @@ section {
     margin-inline: 0.3em;
     line-height: 3em;
   }
-  
+
+
+
+
+
+
+
+  .toparticle .content.column,
+.articles article {
+    text-align: left;
+    
+}
+
+.toparticle h2,
+.articles article h2 {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+    
+    
+}
+
+.toparticle .content.column,
+.articles article {
+    margin-left: 40px; 
+    margin-bottom: 40px;
+}
+
+
